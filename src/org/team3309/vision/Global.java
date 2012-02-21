@@ -13,17 +13,22 @@ import au.edu.jcu.v4l4j.exceptions.V4L4JException;
 public class Global {
 	
 	public static VideoDevice DEVICE;
-	public static FrameGrabber GRABBER;
 
 	public static void init(){
 		try {
 			DEVICE = new VideoDevice(Constants.DEVICE);
-			GRABBER = DEVICE.getRGBFrameGrabber(1280, 720, 0, V4L4JConstants.STANDARD_WEBCAM);
-			DEVICE.release();
 		} catch (V4L4JException e) {
 			e.printStackTrace();
 		}
 		setSettings();
+		try {
+			Thread.sleep(250);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		DEVICE.releaseFrameGrabber();
+		DEVICE.release();
 	}
 	
 	private static void setSettings(){
