@@ -6,11 +6,13 @@ import static com.googlecode.javacv.cpp.opencv_imgproc.*;
 import com.googlecode.javacpp.Loader;
 import com.googlecode.javacv.CanvasFrame;
 import com.googlecode.javacv.OpenCVFrameGrabber;
+import com.googlecode.javacv.cpp.opencv_core;
 import com.googlecode.javacv.cpp.opencv_core.CvContour;
 import com.googlecode.javacv.cpp.opencv_core.CvMemStorage;
 import com.googlecode.javacv.cpp.opencv_core.CvRect;
 import com.googlecode.javacv.cpp.opencv_core.CvSeq;
 import com.googlecode.javacv.cpp.opencv_core.IplImage;
+import com.googlecode.javacv.cpp.opencv_imgproc;
 
 public class VisionMain {
 
@@ -36,6 +38,8 @@ public class VisionMain {
 		System.out.println(grabber.getImageHeight());
 
 		grabber.start();
+		
+		Threshold.showSliders();
 
 		while (true) {
 			cap = grabber.grab();

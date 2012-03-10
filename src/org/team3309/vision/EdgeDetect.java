@@ -14,9 +14,9 @@ public class EdgeDetect {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception{
-		FrameGrabber grabber = new OpenCVFrameGrabber(2);
-		grabber.setImageWidth(960);
-		grabber.setImageHeight(544);
+		FrameGrabber grabber = new OpenCVFrameGrabber(Constants.DEVICE_NUM);
+		grabber.setImageWidth(Constants.CAM_WIDTH);
+		grabber.setImageHeight(Constants.CAM_HEIGHT);
 		grabber.start();
 		CanvasFrame imageFrame = new CanvasFrame("Image");
 		CvMemStorage storage = CvMemStorage.create();
