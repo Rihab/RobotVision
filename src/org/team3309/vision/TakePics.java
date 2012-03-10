@@ -20,6 +20,7 @@ public class TakePics {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception{
+		Global.init();
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		File folder = new File("/home/vmagro/Pictures/RobotVision");
 		folder.mkdir();
@@ -27,12 +28,17 @@ public class TakePics {
 		grabber.start();
 		int i = 0;
 		String line;
-		while((line = in.readLine()) != null){
-			if(line.equals("d"))
-				System.exit(1);
-			File out = new File(folder, "out"+i+".png");
-			ImageIO.write(grabber.grab().getBufferedImage(), "png", out);
-			i++;
+		while(true){
+			if(in.ready()){
+				line = in.readLine();
+				if(line.equals("d"))
+					System.exit(1);
+				File out = new File(folder, "out"+i+".png");
+				ImageIO.write(grabber.grab().getBufferedImage(), "png", out);
+				i++;
+			}
+			grabber.grab().release();
+			Thread.sleep(33);
 		}
 	}
 

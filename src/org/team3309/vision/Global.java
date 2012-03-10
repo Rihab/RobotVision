@@ -32,23 +32,26 @@ public class Global {
 	}
 	
 	private static void setSettings(){
-		List<Control> list = DEVICE.getControlList().getList();
-		for(Control c : list)
-			System.out.println(c.getName()+" min:"+c.getMinValue()+" max:"+c.getMaxValue()+" default:"+c.getDefaultValue());
-		ControlList controls = DEVICE.getControlList();
-		try {
-			controls.getControl("Contrast").setValue(Constants.CONTRAST);
-			controls.getControl("Gamma").setValue(Constants.GAMMA);
+		try{
+			List<Control> list = DEVICE.getControlList().getList();
+			for(Control c : list){
+				//c.setValue(c.getDefaultValue());
+				System.out.println(c.getName()+" min:"+c.getMinValue()+" max:"+c.getMaxValue()+" default:"+c.getDefaultValue());
+			}
+			ControlList controls = DEVICE.getControlList();
+			
+			/*controls.getControl("Contrast").setValue(Constants.CONTRAST);
+			controls.getControl("Gamma").setValue(Constants.GAMMA);*/
 			controls.getControl("Exposure, Auto").setValue(Constants.EXPOSURE_AUTO);
-			controls.getControl("Gain").setValue(Constants.GAIN);
+			/*controls.getControl("Gain").setValue(Constants.GAIN);
 			controls.getControl("Saturation").setValue(Constants.SATURATION);
-			controls.getControl("Sharpness").setValue(Constants.SHARPNESS);
+			controls.getControl("Sharpness").setValue(Constants.SHARPNESS);*/
 			controls.getControl("Focus, Auto").setValue(Constants.FOCUS_AUTO);
-			controls.getControl("Hue").setValue(Constants.HUE);
-			controls.getControl("Exposure (Absolute)").setValue(Constants.EXPOSURE);
-			controls.getControl("Brightness").setValue(Constants.BRIGHTNESS);
+			//controls.getControl("Hue").setValue(Constants.HUE);
+			//controls.getControl("Exposure (Absolute)").setValue(Constants.EXPOSURE);
+			//controls.getControl("Brightness").setValue(Constants.BRIGHTNESS);
 			controls.getControl("Focus (absolute)").setValue(Constants.FOCUS);
-			controls.getControl("White Balance Temperature, Auto").setValue(Constants.WHITE_BALANCE);
+			//controls.getControl("White Balance Temperature, Auto").setValue(Constants.WHITE_BALANCE);
 		} catch (ControlException e) {
 			e.printStackTrace();
 		}
