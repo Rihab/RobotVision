@@ -1,0 +1,19 @@
+K 14
+bugtraq:number
+V 4
+true
+K 10
+svn:ignore
+V 145
+ant.xml
+copyright
+dictionaries
+gradle_settings2_config.xml
+highlighting.xml
+inspectionProfiles
+misc.xml
+qaplug_profiles.xml
+scopes
+workspace.xml
+
+END

@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv
+END
+OpenKinectFrameGrabber.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/OpenKinectFrameGrabber.java
+END
+JavaCvErrorCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/JavaCvErrorCallback.java
+END
+ImageAlignerCL.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ImageAlignerCL.java
+END
+ImageTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ImageTransformer.java
+END
+GLCanvasFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/GLCanvasFrame.java
+END
+GNImageAligner.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/GNImageAligner.java
+END
+CameraSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/84/trunk/javacv/src/com/googlecode/javacv/CameraSettings.java
+END
+ProjectiveTransformer.cl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/158/trunk/javacv/src/com/googlecode/javacv/ProjectiveTransformer.cl
+END
+ProjectiveTransformerCL.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ProjectiveTransformerCL.java
+END
+FrameGrabber.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/FrameGrabber.java
+END
+ReflectanceInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ReflectanceInitializer.java
+END
+ImageTransformer.cl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ImageTransformer.cl
+END
+MarkedPlane.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/MarkedPlane.java
+END
+ImageTransformerCL.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ImageTransformerCL.java
+END
+CanvasFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/CanvasFrame.java
+END
+ProjectorSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/84/trunk/javacv/src/com/googlecode/javacv/ProjectorSettings.java
+END
+GNImageAlignerCL.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/GNImageAlignerCL.java
+END
+BufferRing.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/BufferRing.java
+END
+BaseSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/84/trunk/javacv/src/com/googlecode/javacv/BaseSettings.java
+END
+ProjectiveColorTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ProjectiveColorTransformer.java
+END
+BaseChildSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/84/trunk/javacv/src/com/googlecode/javacv/BaseChildSettings.java
+END
+FFmpegFrameGrabber.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/FFmpegFrameGrabber.java
+END
+ProCamTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ProCamTransformer.java
+END
+FFmpegFrameRecorder.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/FFmpegFrameRecorder.java
+END
+DC1394FrameGrabber.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/DC1394FrameGrabber.java
+END
+CameraDevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/CameraDevice.java
+END
+PS3EyeFrameGrabber.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/PS3EyeFrameGrabber.java
+END
+ProjectiveColorTransformer.cl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/158/trunk/javacv/src/com/googlecode/javacv/ProjectiveColorTransformer.cl
+END
+JavaCV.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/JavaCV.java
+END
+ProjectiveColorTransformerCL.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ProjectiveColorTransformerCL.java
+END
+MarkerDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/MarkerDetector.java
+END
+FlyCaptureFrameGrabber.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/FlyCaptureFrameGrabber.java
+END
+FrameRecorder.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/FrameRecorder.java
+END
+ColorCalibrator.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/73/trunk/javacv/src/com/googlecode/javacv/ColorCalibrator.java
+END
+GeometricCalibrator.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/GeometricCalibrator.java
+END
+ProCamTransformer.cl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/158/trunk/javacv/src/com/googlecode/javacv/ProCamTransformer.cl
+END
+Marker.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/89/trunk/javacv/src/com/googlecode/javacv/Marker.java
+END
+ProCamGeometricCalibrator.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ProCamGeometricCalibrator.java
+END
+ProCamTransformerCL.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ProCamTransformerCL.java
+END
+ProCamColorCalibrator.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/158/trunk/javacv/src/com/googlecode/javacv/ProCamColorCalibrator.java
+END
+HandMouse.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/HandMouse.java
+END
+ImageAligner.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ImageAligner.java
+END
+VideoInputFrameGrabber.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/VideoInputFrameGrabber.java
+END
+JavaCV.cl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/158/trunk/javacv/src/com/googlecode/javacv/JavaCV.cl
+END
+ProjectorDevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ProjectorDevice.java
+END
+JavaCVCL.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/JavaCVCL.java
+END
+OpenCVFrameGrabber.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/OpenCVFrameGrabber.java
+END
+ProjectiveDevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ProjectiveDevice.java
+END
+OpenCVFrameRecorder.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/OpenCVFrameRecorder.java
+END
+Parallel.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/Parallel.java
+END
+ProjectiveTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ProjectiveTransformer.java
+END
+ObjectFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/205/trunk/javacv/src/com/googlecode/javacv/ObjectFinder.java
+END

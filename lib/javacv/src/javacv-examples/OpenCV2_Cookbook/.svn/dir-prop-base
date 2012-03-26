@@ -1,0 +1,23 @@
+K 14
+bugtraq:number
+V 4
+true
+K 10
+svn:ignore
+V 104
+*.dll
+*.dylib
+*.pdb
+*.so
+.cache
+.settings
+bin
+build
+build.xml
+dist
+manifest.mf
+nbproject
+output
+sandbox
+
+END

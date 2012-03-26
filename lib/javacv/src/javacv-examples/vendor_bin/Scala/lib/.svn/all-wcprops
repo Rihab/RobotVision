@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/107/trunk/javacv-examples/vendor_bin/Scala/lib
+END
+scala-library.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/107/trunk/javacv-examples/vendor_bin/Scala/lib/scala-library.jar
+END
+scala-swing.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/107/trunk/javacv-examples/vendor_bin/Scala/lib/scala-swing.jar
+END
+scala-compiler.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/107/trunk/javacv-examples/vendor_bin/Scala/lib/scala-compiler.jar
+END

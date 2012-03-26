@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/204/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04
+END
+Ex4InvertLut.scala
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/200/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/Ex4InvertLut.scala
+END
+Ex8MeanShiftDetector.scala
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/204/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/Ex8MeanShiftDetector.scala
+END
+Ex5EqualizeHistogram.scala
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/201/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/Ex5EqualizeHistogram.scala
+END
+Ex9ImageComparator.scala
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/204/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/Ex9ImageComparator.scala
+END
+Histogram1D.scala
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/204/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/Histogram1D.scala
+END
+ContentFinder.scala
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/204/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/ContentFinder.scala
+END
+Ex6ContentDetectionGrayscale.scala
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/204/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/Ex6ContentDetectionGrayscale.scala
+END
+Ex1ComputeHistogram.scala
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/194/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/Ex1ComputeHistogram.scala
+END
+ImageComparator.scala
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/204/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/ImageComparator.scala
+END
+Ex2ComputeHistogramGraph.scala
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/194/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/Ex2ComputeHistogramGraph.scala
+END
+Ex3Threshold.scala
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/194/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/Ex3Threshold.scala
+END
+ColorHistogram.scala
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/204/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/ColorHistogram.scala
+END
+Ex7ContentDetectionColor.scala
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/204/trunk/javacv-examples/OpenCV2_Cookbook/src/opencv2_cookbook/chapter04/Ex7ContentDetectionColor.scala
+END

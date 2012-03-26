@@ -6,6 +6,8 @@ import static com.googlecode.javacv.cpp.opencv_imgproc.*;
 import com.googlecode.javacpp.Loader;
 import com.googlecode.javacv.CanvasFrame;
 import com.googlecode.javacv.OpenCVFrameGrabber;
+import com.googlecode.javacv.OpenCVFrameRecorder;
+import com.googlecode.javacv.OpenKinectFrameGrabber;
 import com.googlecode.javacv.cpp.opencv_core;
 import com.googlecode.javacv.cpp.opencv_core.CvContour;
 import com.googlecode.javacv.cpp.opencv_core.CvMemStorage;
@@ -28,21 +30,24 @@ public class VisionMain {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception {
-		Global.init();
-		OpenCVFrameGrabber grabber = new OpenCVFrameGrabber(
-				Constants.DEVICE_NUM);
+		//Global.init();
+		/*OpenKinectFrameGrabber grabber = new OpenKinectFrameGrabber(
+				0);
+		//OpenCVFrameRecorder recorder = new OpenCVFrameRecorder("/home/friarbots/Videos/, 0, 0);
 		grabber.setImageWidth(Constants.CAM_WIDTH);
 		grabber.setImageHeight(Constants.CAM_HEIGHT);
 
 		System.out.println(grabber.getImageWidth());
 		System.out.println(grabber.getImageHeight());
 
-		grabber.start();
+		grabber.start();*/
 		
+		KinectCapture grabber = new KinectCapture();
+
 		Threshold.showSliders();
 
 		while (true) {
-			cap = grabber.grab();
+			cap = grabber.getImage();
 			hsv = cvCreateImage(
 					cvSize(cap.width(),
 							cap.height()), IPL_DEPTH_8U, 3);
@@ -62,6 +67,7 @@ public class VisionMain {
 			cvFindContours(thresh, storage, contours,
 					Loader.sizeof(CvContour.class), CV_RETR_LIST,
 					CV_CHAIN_APPROX_SIMPLE);
+			int targetsFound = 0;
 			while (contours != null && !contours.isNull()) {
 				if (contours.elem_size() > 0) {
 					CvSeq points = cvApproxPoly(contours,
@@ -76,29 +82,36 @@ public class VisionMain {
 					double score = (area / boxArea) * 100;
 					score = Math.round(score);
 					if (score > 75) {// is probably backboard
-						double distance = Utils.distance(box.width());
+						CvPoint center = cvPoint((int) minAreaBox.center().x(),
+								(int) minAreaBox.center().y());
+						short rawDepth = grabber.getDepth().readPixel(center.x(), center.y());
+						System.out.println("Raw depth: "+rawDepth);
+						double distance = Utils.kinectDistance(rawDepth);
 						cvPutText(cap,
 								String.valueOf(distance),
 								cvPoint(box.x(), box.y()), cvFont(2, 1),
+								cvScalar(255, 0, 0, 0));
+						cvPutText(cap,
+								String.valueOf(targetsFound),
+								center, cvFont(2, 1),
 								cvScalar(255, 0, 0, 0));
 						double offCenter = minAreaBox.center().x()
 								- (Constants.CAM_WIDTH / 2);
 						double offAngle = Math.toDegrees(Math.atan(offCenter
 								/ distance));
 						cvLine(cap,
-								cvPoint((int) minAreaBox.center().x(),
-										(int) minAreaBox.center().y()),
-								cvPoint((int) minAreaBox.center().x(),
-										(int) minAreaBox.center().y()),
+								center,
+								center,
 								CvScalar.RED, 5, 8, 0);
-						System.out.println(offCenter + " " + offAngle);
+						//System.out.println(offCenter + " " + offAngle);
+						targetsFound++;
 					}
 				}
 				contours = contours.h_next();
 			}
 			cvLine(cap, cvPoint(Constants.CAM_WIDTH / 2, 0),
 					cvPoint(Constants.CAM_WIDTH / 2, Constants.CAM_HEIGHT),
-					CvScalar.RED, 5, 8, 0);
+					CvScalar.RED, 1, 8, 0);
 			imageFrame.showImage(cap);
 			Thread.sleep(33);
 		}

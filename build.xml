@@ -1,0 +1,52 @@
+<project name="JavaVision" default="dist" basedir=".">
+	<description>
+        simple example build file
+    </description>
+	<!-- set global properties for this build -->
+	<property name="src" location="src"/>
+	<property name="build" location="build"/>
+	<property name="dist"  location="dist"/>
+
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp/>
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}"/>
+	</target>
+
+	<target name="compile" depends="init"
+        description="compile the source " >
+		<!-- Compile the java code from ${src} into ${build} -->
+
+		<javac srcdir="${src}" destdir="${build}">
+			<classpath id="classpath" description="The default classpath.">
+				<pathelement path="${classpath}"/>
+				<fileset dir="lib">
+					<include name="*.jar"/>
+					<include name="javacv/*.jar"/>
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="dist" depends="compile"
+        description="generate the distribution" >
+		<!-- Create the distribution directory -->
+
+		<!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
+		<jar jarfile="${dist}/JavaVision.jar" basedir="${build}"/>
+	</target>
+
+	<target name="clean"
+        description="clean up" >
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${build}"/>
+		<delete dir="${dist}"/>
+	</target>
+
+	<target name="deploy" description="copy and run jar on robot" depends="dist">
+		<scp localFile="${dist}/JavaVision.jar" remoteToFile="friarbots@10.33.9.63:/home/friarbots/JavaVision.jar" keyFile="{user.home}/.ssh/id_rsa.pub"/>
+		<sshexec host="10.33.9.63" username="friarbots" command="java -jar /home/friarbots/JavaVision.jar" keyFile="{USER_HOME}/.ssh/id_rsa.pub"/>
+	</target>
+
+</project>

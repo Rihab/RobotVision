@@ -2,8 +2,16 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
-	<classpathentry kind="lib" path="/home/vmagro/workspace/lib/javacv/javacpp.jar" sourcepath="/home/vmagro/workspace/lib/javacpp-src-20120303.zip"/>
-	<classpathentry kind="lib" path="/home/vmagro/workspace/lib/javacv/javacv.jar" sourcepath="/home/vmagro/workspace/lib/javacv/src"/>
+	<classpathentry kind="lib" path="/home/vmagro/workspace/lib/javacv/javacpp.jar" sourcepath="/home/vmagro/workspace/lib/javacpp-src-20120303.zip">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/usr/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/vmagro/workspace/lib/javacv/javacv.jar" sourcepath="/home/vmagro/workspace/lib/javacv/src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/usr/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/home/vmagro/workspace/lib/javacv/javacv-linux-x86.jar"/>
 	<classpathentry kind="lib" path="/home/vmagro/workspace/lib/javacv/javacv-linux-x86_64.jar"/>
 	<classpathentry kind="lib" path="/usr/share/java/v4l4j.jar" sourcepath="/usr/share/java/v4l4j-src">
@@ -18,5 +26,8 @@
 			<attribute name="javadoc_location" value="jar:file:/home/vmagro/workspace/lib/gson-2.1-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/vmagro/workspace/lib/jna.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/org.OpenNI.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/com.primesense.NITE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

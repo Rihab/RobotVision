@@ -18,8 +18,8 @@ public class Constants {
 	public static final int EXPOSURE_AUTO	= 1;
 	public static final int FOCUS_AUTO	= 0;
 	
-	public static final int CAM_WIDTH = 1280;
-	public static final int CAM_HEIGHT = 720;
+	public static final int CAM_WIDTH = 640;
+	public static final int CAM_HEIGHT = 480;
 	
 	public static final int TARGET_WIDTH_FT = 2;
 	
