@@ -14,12 +14,16 @@ public class Server {
 	private Handler handler;
 	
 	public static Server getInstance(){
-		return new Server();
+		if(instance == null)
+			instance = new Server();
+		return instance;
 	}
 	
 	private Server(){
 		try {
+			System.out.println("Binding to port 3309, waiting for connection");
 			ServerSocket server = new ServerSocket(3309);
+			server.setSoTimeout(0);
 			handler = new Handler(server.accept());
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -41,6 +45,7 @@ public class Server {
 		private DataWrapper toSend = new DataWrapper();
 		
 		public Handler(Socket skt){
+			System.out.println("Client connected");
 			try {
 				out = new PrintStream(skt.getOutputStream());
 			} catch (IOException e) {

@@ -45,6 +45,8 @@ public class VisionMain {
 		KinectCapture grabber = new KinectCapture();
 
 		Threshold.showSliders();
+		
+		Server.getInstance();
 
 		while (true) {
 			cap = grabber.getImage();
@@ -85,8 +87,8 @@ public class VisionMain {
 						CvPoint center = cvPoint((int) minAreaBox.center().x(),
 								(int) minAreaBox.center().y());
 						short rawDepth = grabber.getDepth().readPixel(center.x(), center.y());
-						System.out.println("Raw depth: "+rawDepth);
-						double distance = Utils.kinectDistance(rawDepth);
+						//System.out.println("Raw depth: "+rawDepth);
+						double distance = Utils.kinectDistanceFeet(rawDepth);
 						cvPutText(cap,
 								String.valueOf(distance),
 								cvPoint(box.x(), box.y()), cvFont(2, 1),
@@ -97,14 +99,22 @@ public class VisionMain {
 								cvScalar(255, 0, 0, 0));
 						double offCenter = minAreaBox.center().x()
 								- (Constants.CAM_WIDTH / 2);
+						offCenter = Utils.pxToFeet(minAreaBox.size().width(), offCenter);
 						double offAngle = Math.toDegrees(Math.atan(offCenter
 								/ distance));
 						cvLine(cap,
 								center,
 								center,
 								CvScalar.RED, 5, 8, 0);
-						//System.out.println(offCenter + " " + offAngle);
+						System.out.println(offCenter + " " + offAngle);
 						targetsFound++;
+						
+						//server code
+						DataWrapper wrapper = new DataWrapper();
+						wrapper.setCanShoot(false);
+						wrapper.setOffAngle((int) offAngle);
+						wrapper.setRpm(0);
+						Server.getInstance().setData(wrapper);
 					}
 				}
 				contours = contours.h_next();
@@ -113,6 +123,9 @@ public class VisionMain {
 					cvPoint(Constants.CAM_WIDTH / 2, Constants.CAM_HEIGHT),
 					CvScalar.RED, 1, 8, 0);
 			imageFrame.showImage(cap);
+			
+			
+			
 			Thread.sleep(33);
 		}
 	}
